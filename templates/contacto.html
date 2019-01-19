@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %}CEIT - Contacto {% endblock %}
+
+{% block contenido %}
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading -->
+  <div class="h2 mt-4 mb-3 text-primary">
+    Contáctanos
+  </div>
+
+  <!-- Content Row -->
+  <div class="row">
+    <!-- Contact Details Column -->
+    <div class="col-lg-6 mb-4">
+        <p><i class="fas fa-envelope"></i>
+          <b>Correo:</b>
+          <a href = "mailto: ceitpucmmsti@gmail.com">ceitpucmmsti@gmail.com</a></p>
+      <p>
+        <i class="fas fa-phone"></i>
+        <b>Teléfono:</b> <a href="tel:809-582-1962">(809) 582-1962</a> ext-4542
+      </p>
+      <p>
+        <b>Whatsapp:</b>
+        <a href="https://api.whatsapp.com/send?phone=18099312607">
+        <button type="button" class="btn btn-success">
+          <i class="fab fa-whatsapp"></i>
+          +1 (809) 931-2607
+        </button>
+        </a>
+      </p>
+      <p>
+        <i class="fas fa-clock"></i> <b>Horario:</b> Lunes a viernes: 8:00 a.m.
+        - 12:30 p.m. y 2:00 - 5:00 p.m.
+      </p>
+    </div>
+  </div>
+  <!-- /.row -->
+
+</div>
+{% endblock %}

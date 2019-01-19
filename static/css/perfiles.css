@@ -1,0 +1,138 @@
+
+section{
+	margin:0 auto;
+	text-align: center;
+}
+
+section#info-title{
+	color: black;
+	max-width: 1100px;
+	padding: 0px;
+	text-align: center;
+}
+
+section#texto{
+	padding: 0px;
+	max-width: 1000px;
+}
+
+section#perfiles{
+	margin: auto;
+	text-align: center;
+}
+
+section#columnas{
+	min-width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+section#perfiles article{
+	margin: 0px 20px 0px 20px;
+	display: inline-block;
+	min-width: 160px;
+	min-height: 280px;
+	max-width: 160px;
+	max-height: 360px;
+	vertical-align: top;
+	line-height: 95%;
+	color: #464646;
+}
+
+section#columnas article{
+	display: inline-block;
+	margin: 13px 30px 13px 30px;
+	min-height: 250px;
+	text-align: justify;
+	vertical-align: top;
+	min-width: 210px;
+	max-width: 300px;
+}
+
+section#columnass article p
+{
+	color: black;
+}
+
+article p{
+	font-size: 13pt;
+}
+
+.perfil-nombre{
+	color: #656666;
+	text-align: center;
+	text-shadow: 1px 1px 1px #9c9c9c;
+}
+
+.perfil-cargo{
+	font-size: 11pt;
+	text-align: center;
+	line-height: 90%;
+}
+
+section#perfiles img{
+	border-radius: 100px;
+	margin: 10px 0px 10px 0px;
+}
+
+section#titulo{
+	border-radius: 20px;
+	display: inline-block;
+	margin: 13px 15px 13px 15px;
+	min-height: 25px;
+	min-width: 130px;
+	max-width: 400px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+}
+
+section#titulo p{
+	color: white;
+	margin: 0px 15px 0px 15px;
+	font-size: 1em;
+}
+
+img{
+ 	opacity: 0.97;
+ 	-moz-transition: all 0.3s ease-in;
+}
+
+img:hover{
+ 	opacity: 1;
+ 	-moz-transition: all 0.7s ease-out;
+}
+
+.perfil-foto {
+	width: 150px;
+	height: 150px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 0px 5px #000;
+  	-moz-box-shadow: 0px 0px 5px #000;
+}
+
+
+.ext {
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 724px) {
+  section#columnas article{
+  	max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 813px) {
+  section#perfiles article{
+	margin: 0px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+ 	section#perfiles article{
+		margin: 0px 10px 0px 10px;
+	}
+
+}

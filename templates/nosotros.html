@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+CEIT - Nosotros
+{% endblock %}
+
+{% block contenido %}
+<!-- Only needed for this page (nosotros.html) -->
+<link rel="stylesheet"
+href=" {{ url_for('static', filename='css/perfiles.css') }} ">
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading/Breadcrumbs -->
+  <div class="h2 mt-4 mb-3 text-primary">
+    Comité de Estudiantes de Ingeniería Telemática
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">
+            Misión <i class="text-danger fas fa-heart"></i>
+          </h4>
+          <p class="card-text">
+            El CEIT tiene como misión; el intermediar la relación entre los
+            estudiantes de la carrera, el aparato académico y administrativo
+            de la universidad. Proporcionar a los estudiantes orientaciones
+            generales y favorecer al desarrollo de su formación integral.
+            También dar a conocer a los estudiantes de Ingeniería
+            Telemática de la PUCMM y otras universidades, así como a
+            los estudiantes de término de secundaria, las
+            potencialidades y el alcance de la carrera.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">
+              Visión <i class="text-warning fas fa-star"></i>
+          </h4>
+          <p class="card-text">
+            Incentivar la búsqueda de nuevos horizontes y posibilidades
+            dentro de la carrera. Al igual la formación de programas que
+            beneficien en el ámbito académicos a los estudiantes. Luchar
+            por la dignificación y profesionalización de los estudiantes
+            de nuestra carrera y otras a fines.
+          </p></div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title text-center">
+              Objetivos <i class="text-success fas fa-heart"></i>
+          </h4>
+          <p class="card-text">
+            El comité tiene como objetivos; el estudio y desarrollo de
+            los intereses estudiantiles. La búsqueda de forma de desarrollar
+            en sus miembros activos la capacidad de liderazgo. Así como
+            mejorar el estatus del estudiante dentro de esquema de
+            funcionamiento universitario.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="h2 text-primary">
+    Directiva 2019
+  </div>
+  <section id="perfiles">
+  <br>
+  <div>
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/yamilka.png') }} "
+      alt="Presidente"/>
+      <p class="perfil-nombre">Yamilka Vásquez</p>
+      <p class="perfil-cargo"><b>Presidente</b></p>
+    </article>
+
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/vilma.png') }} "
+      alt="Vice-Presidente"/>
+      <p class="perfil-nombre">Vilma Vidal</p>
+      <p class="perfil-cargo"><b>Vice-Presidente</b>
+    </article>
+      <article>
+        <img class="perfil-foto"
+        src=" {{ url_for('static', filename='img/perfiles/alejandro.png') }} "
+        alt="Tesorero"/>
+        <p class="perfil-nombre">Alejandro Colón</p>
+        <p class="perfil-cargo"><b>Tesorero</b></p>
+      </article>
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/oscar.png') }} "
+      alt="Secretario"/>
+      <p class="perfil-nombre">Oscar Rodríguez</p>
+      <p class="perfil-cargo"><b>Secretario</b></p>
+    </article>
+  </div>
+  <div>
+
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/harold.png') }} "
+      alt="Coordinador de Logística"/>
+      <p class="perfil-nombre">Harold Díaz</p>
+      <p class="perfil-cargo"><b>Coordinador de Logística</b></p>
+    </article>
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/sara.png') }} "
+      alt="Coordinador de Tecnología"/>
+      <p class="perfil-nombre">Sarahaime Rodríguez</p>
+      <p class="perfil-cargo"><b>Coordinadora de TI</b></p>
+    </article>
+    <article>
+      <img class="perfil-foto"
+      src=" {{ url_for('static', filename='img/perfiles/felix.png') }} "
+      alt="Relacionador Público"/>
+      <p class="perfil-nombre">Félix Tejada</p>
+      <p class="perfil-cargo"><b>Relacionador Público</b>
+    </article>
+  </div>
+
+</section>
+</div>
+<!-- /.container -->
+
+<div class="container">
+  <!-- Organigrama -->
+  <div class="h2 text-primary">Organigrama</div>
+
+    <a href=" {{ url_for('static', filename='img/organigrama-comprimido.png') }} ">
+      <img
+      src=" {{ url_for('static', filename='img/organigrama-comprimido.png') }} "
+      class="img-fluid" alt="Diagrama de materias de la carrera">
+    </a>
+  <!-- /.row -->
+</div>
+<br>
+
+{% endblock %}

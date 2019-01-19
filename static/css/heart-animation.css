@@ -1,0 +1,50 @@
+
+
+.corazon{
+  animation:1.5s heartThrob infinite;
+}
+@-moz-keyframes heartThrob{
+  10%{
+    transform:scale(1.20)
+    }
+  20%{
+    transform:scale(1)
+    }
+  40%{
+      transform:scale(1.20)
+      }
+  60%{transform:scale(1)}}
+
+@-webkit-keyframes heartThrob{
+  10%{
+    transform:scale(1.20)
+    }
+    20%{transform:scale(1)
+      }
+      40%{
+        transform:scale(1.20)
+      }
+60%{
+  transform:scale(1)
+  }}
+@-o-keyframes heartThrob{
+  10%{
+    transform:scale(1.20)
+    }
+    20%{
+      transform:scale(1)
+    }
+    40%{
+      transform:scale(1.20)
+    }
+    60%{
+      transform:scale(1)
+      }}
+
+@keyframes heartThrob{
+  10%{
+    transform:scale(1.20)
+    }
+    20%{transform:scale(1)}
+    40%{transform:scale(1.20)}
+    60%{transform:scale(1)}}

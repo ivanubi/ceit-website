@@ -1,0 +1,336 @@
+{% extends "base.html" %}
+
+{% block titulo %}CEIT - Ingeniería Telemática PUCMM{% endblock %}
+
+{% block contenido %}
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading/Breadcrumbs -->
+  <h1 class="mt-4 mb-3 text-primary">Ingeniería Telemática
+  </h1>
+
+  <!-- Intro Content -->
+  <div class="row">
+    <div class="col-lg-6">
+      <iframe class="video" style="box-shadow: 0 0 4px 2px rgba(0,0,0,.50);"
+      width="550" height="350" src="https://www.youtube.com/embed/eZzQB_s5EV4"
+      frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <div class="col-lg-6">
+      <h2>Acerca de la Ingeniería Telemática</h2>
+      <p>La Real Academia de la Lengua Española define la telemática como:
+        “La aplicación de las técnicas de la telecomunicación y de la
+        información a la transmisión de información computarizada”.
+        Es decir, que un telemático se encarga de analizar e
+        implementar servicios y aplicaciones que faciliten la transmisión
+        de información, utilizando el medio más eficiente y seguro.</p>
+      <p>El enfoque primario de el pensum de Ingeniería Telemática
+        es el desarrollo de habilidades en la solución de problemas de
+        telecomunicación. No obstante, debido a que la carrera es la unión
+        de la informática y una rama de la electrónica, el egresado también
+        obtendrá conocimientos en las áreas de programación, base de datos,
+        electrónica análoga y digital, electrónica de comunicaciones, y
+        demás campos relacionados.</p>
+        </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Information -->
+  <h2>Información</h2>
+
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card h-100 text-center">
+        <img class="card-img-top"
+        src= " {{ url_for('static', filename='img/director-carlos-camacho.jpg') }} "
+        alt="">
+        <div class="card-body">
+          <h4 class="card-title">Director de Carrera</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Ing. Carlos Camacho</h6>
+        Egresado de Ingeniería Telemática, magíster en Tecnología Educativa,
+        profesor por vocación.
+      </div>
+        <div class="card-footer">
+          <a href="mailto: ceitpucmmsti@gmail.com">ccamacho@pucmm.edu.do</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <br>
+          <h5 class="card-title">Ubicación del Departamento</h5>
+            <p class="card-text">
+            Edificio Facultad de Ciencias de la Ingeniería, segundo nivel a
+            la derecha. El mismo se encuentra entre Aulas 3 y Ciencias Básicas.
+          </p>
+          <h5 class="card-title">Extensión del Departamento</h5>
+          <p class="card-text">
+            (809) 580-1962, Ext. 4542.
+          </p>
+          <h5 class="card-title">Horario del Departamento</h5>
+          <p class="card-text">
+            Lunes a viernes: 8:00 a.m. - 12:30 p.m. y 2:00 - 5:00 p.m.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card h-100 text-center">
+        <div class="card-body">
+          <br>
+          <h5 class="card-title">Duración de la Carrera</h5>
+            <p class="card-text">
+            5 años
+          </p>
+          <h5 class="card-title">Programa de la Carrera</h5>
+          <p>
+            <a href="https://www.pucmm.edu.do/ingenierias/Documents/PENSA-ITT-4B.pdf"
+            class="card-text">
+            Ingeniería Telemática
+            </a>
+          </p>
+          <h5 class="card-title">Campus</h5>
+          <p class="card-text">
+            Disponible en Santiago y en Santo Domingo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <h2>Preguntas frecuentes</h2>
+
+  <div class="mb-4" id="accordion" role="tablist"
+  aria-multiselectable="false">
+    <div class="card">
+      <div class="card-header" role="tab" id="headingOne">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseOne" aria-expanded="false"
+          aria-controls="collapseOne" role="button">
+          ¿En qué áreas puede ejercer la carrera un telemático
+           egresado de la PUCMM?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse" role="tabpanel"
+      aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Generalmente, el egresado de telemática se dedica al desarrollo
+          de software (ya sea programación web, de escritorio, o de
+          aplicaciones) o se especializa en alguno de los varios campos
+          que ofrecen las redes (seguridad, cloud, telefonía, diseño de
+          redes, y demás).
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingTwo">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseTwo" aria-expanded="false"
+          aria-controls="collapseTwo" role="button">
+            ¿Cuál es la dificultad de la carrera?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" role="tabpanel"
+      aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Cualquier carrera de ingeniería tiende a ser difícil, debido a
+          que, por definición, el ingeniero debe poder resolver cualquier
+          problema (dentro de su área del conocimiento), y en el caso de
+          que este no sepa cómo resolver el problema debe investigar y
+          aprender a resolverlo. Por lo tanto, la carrera prepara a los
+          estudiantes para que estos puedan enfrentarse a cualquier
+          adversidad en su vida profesional.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingThree">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseThree" aria-expanded="false"
+          aria-controls="collapseThree" role="button">
+            ¿Qué fortalezas se deben tener en cuenta para optar por la carrera de telemática?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" role="tabpanel"
+      aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          Primordialmente, todo estudiante que aspire a ser ingeniero
+          telemático debe de tener interés en la tecnología y su evolución.
+          También, es importante tener una mente activa y abierta a
+          cualquier desafío, ya sea en el ámbito matemático y físico
+          como en el área ingenieril (en nuestro caso, programación,
+          redes y sus derivados, electrónica de comunicaciones, y demás).
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingFour">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseFour" aria-expanded="false"
+          aria-controls="collapseFour" role="button">
+            ¿En qué se diferencia de carreras como electrónica y eléctrica?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" role="tabpanel"
+      aria-labelledby="headingFour" data-parent="#accordion">
+        <div class="card-body">
+          La ingeniería telemática es una rama de la electrónica,
+          sin embargo, el perfil del telemático es dedicado casi únicamente
+          a la telecomunicación, mientras que el electrónico se dedica a
+          proveer soluciones de hardware en las distintas disciplinas de
+          la electrónica. En cuanto a los ingenieros eléctricos, no hay
+          mucha relación con estos, puesto a que los eléctricos se dedican
+          a resolver problemas energéticos, y demás áreas relacionadas.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingFive">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseFive" aria-expanded="false"
+          aria-controls="collapseFive" role="button">
+          ¿Cuál es la diferencia entre sistemas y telemática?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" role="tabpanel"
+      aria-labelledby="headingFive" data-parent="#accordion">
+        <div class="card-body">
+          Debido a la parte informática del ingeniero telemático tiende a
+          haber confusión entre estas dos ingenierías. El ingeniero en
+          sistemas entra más a fondo a lo que es el desarrollo de software
+          en todas sus interpretaciones y aprende más lenguajes de
+          programación que un telemático. No obstante, los estudiantes
+          de telemática aprenden todo lo necesario para lanzarse al mundo
+          del desarrollo de software, pero este no es el enfoque de la
+          carrera.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingSix">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseSix" aria-expanded="false"
+          aria-controls="collapseSix" role="button">
+          ¿Qué tipo de trabajos podría realizar un egresado de telemática?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" role="tabpanel"
+      aria-labelledby="headingSix" data-parent="#accordion">
+        <div class="card-body">
+          Los egresados de ingeniería telemática tienen una multitud de
+          opciones en cuando al ámbito laboral, puesto a que esta carrera
+          se dedica a la transferencia, seguridad, y manejo de información.
+           Por lo tanto, es posible trabajar en: hospitales, cadenas de
+           bancas de apuestas, oficinas del gobierno como Edenorte o
+           Coraasan, proveedores de servicio como Claro, Orange, Tricom,
+           y demás. Básicamente, cualquier lugar que transfiera
+           información en volumen puede ser un lugar de trabajo
+           para un telemático.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingSeven">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseSeven" aria-expanded="false"
+          aria-controls="collapseSeven" role="button">
+            ¿Telemática resulta rentable en cuanto a opción del desempeño
+            del trabajo?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" role="tabpanel"
+      aria-labelledby="headingSeven" data-parent="#accordion">
+        <div class="card-body">
+          Realmente, todo depende del empeño que pongas como individuo en el
+          ámbito profesional. La telemática abarca muchas disciplinas, así
+          que debe ser posible encontrar muchas oportunidades rentables,
+          todo depende de que tanto empeño le dediques.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingEight">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseEight" aria-expanded="false"
+          aria-controls="collapseEight" role="button">
+            ¿Se desarrollan actividades o eventos que permitan
+            demostrar mis habilidades como telemático?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseEight" class="collapse" role="tabpanel"
+      aria-labelledby="headingEight" data-parent="#accordion">
+        <div class="card-body">
+          Si, el Comité de Estudiantes de Ingeniería Telemática y el
+          Departamento de Ingeniería Telemática realizan competencias y
+          torneos en los que los estudiantes de ingeniería telemática
+          pueden competir entre sí para probar sus conocimientos.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab" id="headingNine">
+        <h5 class="mb-0">
+          <a class="collapsed" data-toggle="collapse"
+          href="#collapseNine" aria-expanded="false"
+          aria-controls="collapseNine" role="button">
+            ¿El departamento de telemática fomenta el aprendizaje
+            mediante charlas o cursos externos al pensum?
+          </a>
+        </h5>
+      </div>
+      <div id="collapseNine" class="collapse" role="tabpanel"
+      aria-labelledby="headingNine" data-parent="#accordion">
+        <div class="card-body">
+        Si, el Comité de Estudiantes de Ingeniería Telemática y su
+        Departamento Académico realizan varias actividades todos los
+        años para promover la carrera y el conocimiento de la misma,
+        además de ayudar al desarrollo personal y profesional de los
+        estudiantes.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subjects diagram -->
+  <h2>Diagrama de materias</h2>
+
+    <a href=" {{ url_for('static', filename='img/diagrama-de-materias-comprimido.png') }} ">
+      <img src=" {{ url_for('static', filename='img/diagrama-de-materias-comprimido.png') }} "
+      class="img-fluid"
+      alt="Diagrama de materias de la carrera">
+    </a>
+  <!-- /.row -->
+
+</div>
+<br>
+<!-- /.container -->
+
+{% endblock %}

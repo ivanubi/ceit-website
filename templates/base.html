@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Web del Comité de Estudiantes de Ingeniería
+    Telemática (CEIT) de la universidad Pontificia Universidad Católica Madre y
+    Maestra (PUCMM)">
+    <meta name="author" content="CEIT Comité de Estudiantes de Ingeniería Telemática">
+
+    <title>{% block titulo %}Título de la página (Title){% endblock %}</title>
+
+    <!-- Favicons -->
+    <link href= " {{ url_for('static', filename='img/favicon.ico') }} " rel="icon">
+    <!-- Bootstrap core CSS -->
+    <link href= " {{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }} "
+    rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href= " {{ url_for('static', filename='css/modern-business.css') }} "
+    rel="stylesheet">
+    <link href= " {{ url_for('static', filename='css/fonts.css') }} " rel="stylesheet">
+    <link href= " {{ url_for('static', filename='css/footer.css') }} " rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+  <!-- NAVIGATION: -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/index">
+        <img class="noshow-if-mobile"
+        src= " {{ url_for('static', filename='img/logo-ceit.png') }} "
+        alt="Logo del Comité de Estudiantes de Ingeniería Telemática"
+        title="Logo del Comité de Estudiantes de Ingeniería Telemática" />
+        <img class="show-if-mobile"
+        src= " {{ url_for('static', filename='img/logo-ceit-mobile.png') }} "
+        alt="Logo del Comité de Estudiantes de Ingeniería Telemática" title="Logo del
+        Comité de Estudiantes de Ingeniería Telemática" />
+      </a>
+      <button class="navbar-toggler navbar-toggler-right"
+      type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="/telematica">Telemática</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="/nosotros">Nosotros
+              <span class="badge badge-success">¡Directiva 2019!</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END navigation -->
+
+  <!-- CONTENT: -->
+
+  {% block contenido %} El contenido de la página. {% endblock %}
+
+  <!-- END content -->
+
+  <!-- FOOTER: -->
+  <footer class = "font-weight-normal">
+    <section id="m-footer">
+        <section id="m-sec-footer">
+            <div class="foot-1" id="foot-left">
+              <div>Departamento de Ingeniería Telemática</div>
+              <div>Contacto: 809-580-1962</div>
+              <div>Extensión: 4542</div>
+            </div>
+            <div class="foot-1" id="foot-center">
+              <div><a href="http://www.pucmm.edu.do">
+                <img src= " {{ url_for('static', filename='img/logo-pucmm.png') }} "
+                alt="logo-pucmm"></a></div>
+              <div>
+                <div>Pontificia Universidad Católica Madre y Maestra</div>
+                <div>PUCMM - Santiago</div>
+              </div>
+            </div>
+            <div class="foot-1" id="foot-right">
+              <div>PUCMM - Campus Santiago</div>
+              <div>Autopista Duarte Km 1 1/2</div>
+              <div>Santiago, República Dominicana.</div>
+            </div>
+            <div id="foot-clone">
+              <div id="foot-left-clone">
+                <div>Departamento de Ingeniería Telemática</div>
+                <div>Contacto: 809-580-1962</div>
+                <div>Extensión: 4542</div>
+              </div>
+              <div id="foot-right-clone">
+                <div>PUCMM - Campus Santiago</div>
+                <div>Autopista Duarte Km 1 1/2</div>
+                <div>Santiago, República Dominicana.</div>
+              </div>
+            </div>
+         </section>
+         <section id="m-princ-footer">
+              © 2019 Comité de Estudiantes de Ingeniería Telemática - CEIT
+         </section>
+    </section>
+  </footer>
+  <!-- END Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src=" {{ url_for('static', filename='vendor/jquery/jquery.min.js') }} "></script>
+  <script src=" {{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+
+  </body>
+</html>
