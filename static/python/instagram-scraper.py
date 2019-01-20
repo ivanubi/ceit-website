@@ -1,6 +1,7 @@
 import json
 from random import choice
 from pprint import pprint
+import time
 
 import requests
 
@@ -63,24 +64,22 @@ class InstagramScraper:
 
 username = 'ceit_pucmm'
 post_number = 0 # Last post made on Instagram.
-
 instagram = InstagramScraper()
-results = instagram.profile_page_recent_posts('https://www.instagram.com/' + username + '/?hl=en')
 
-caption = results[post_number]["edge_media_to_caption"]["edges"][0]["node"]["text"]
-image_url = results[post_number]["display_url"]
+while(1):
+    results = instagram.profile_page_recent_posts('https://www.instagram.com/' + username + '/?hl=en')
+    #pprint(results[post_number]["is_video"])
+    #Check if the post is a video or an image.
+    if results[post_number]["is_video"] == False:
+        caption = results[post_number]["edge_media_to_caption"]["edges"][0]["node"]["text"]
+        #image_url = results[post_number]["display_url"] # High resolution email.
+        image_url = results[post_number]["thumbnail_resources"][4]["src"]
+        # Request and download the image:
+        r = requests.get(image_url, allow_redirects=True)
+        open('last_instagram_post.jpg', 'wb').write(r.content)
 
-#Check if the post is a video.
-if results[post_number]["is_video"] == 'True':
-    is_video = True
-else:
-    is_video = False
-
-# Request and download the image:
-r = requests.get(image_url, allow_redirects=True)
-open('last_instagram_post.jpg', 'wb').write(r.content)
-
-# Save the last post caption in a .txt file:
-open('last_post_caption.txt', 'w').write(caption)
+        # Save the last post caption in a .txt file:
+        open('last_post_caption.txt', 'w').write(caption)
+    time.sleep(300)
 
 #last_image_url = results[0]["thumbnail_resources"][4]["src"]

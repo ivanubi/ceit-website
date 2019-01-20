@@ -87,11 +87,9 @@
   <div class="row">
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#">
           <img class="card-img-top"
           src= " {{ url_for('static', filename='img/mercadolaboral.jpg') }} "
           alt="">
-        </a>
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Charla Mercado Laboral</div>
@@ -107,9 +105,9 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top"
+        <img class="card-img-top"
           src= " {{ url_for('static', filename='img/sgc-comprimida.png') }} "
-          alt=""></a>
+          alt="">
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Students Gaming Championship (SGC)</div>
@@ -128,9 +126,9 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top"
+        <img class="card-img-top"
           src= " {{ url_for('static', filename='img/torneoredes-comprimida.png') }} "
-          alt=""></a>
+          alt="">
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Torneo de Redes 2018</div>
@@ -150,9 +148,9 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top"
+        <img class="card-img-top"
           src= " {{ url_for('static', filename='img/seminario-comprimida.jpg') }} "
-          alt=""></a>
+          alt="">
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Seminario de Tecnología
@@ -165,9 +163,9 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top"
+        <img class="card-img-top"
           src= " {{ url_for('static', filename='img/jam-comprimida.jpg') }} "
-           alt=""></a>
+           alt="">
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Raspberry Jam</div>
@@ -182,9 +180,9 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="#"><img class="card-img-top"
+        <img class="card-img-top"
           src= " {{ url_for('static', filename='img/proximamente-comprimida.jpg') }} "
-          alt=""></a>
+          alt="">
         <div class="card-body">
           <h4 class="card-title">
             <div class="text-primary">Próximamente</div>
@@ -226,13 +224,11 @@
       </div>
       <div class="card">
         <img class="card-img-top"
-        src= " {{ url_for('static', filename='python/last_instagram_post-comprimida.jpg') }} "
+        src= " {{ url_for('static', filename='python/last_instagram_post.jpg') }} "
         alt="Card image cap">
         <div class="card-body">
           <p class="card-text"><b>ceit_pucmm</b>
-          Gracias por hacer de este año el mejor. La directiva CEIT 2018
-          se despide para pronto dar paso a los nuevos líderes.
-          ¡Feliz Navidad y próspero Año Nuevo!💙🎄</p>
+          {{ instagram_text|safe }}</p>
           <a href="https://www.instagram.com/ceit_pucmm/"
           class="btn btn-danger">
             <i class="fas fa-heart"></i> Seguir en Instagram

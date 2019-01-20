@@ -9,6 +9,14 @@ app = Flask("CEIT Development Server")
 @app.route('/index')
 @app.route('/index.html')
 def index():
+    file = open("static/python/last_post_caption.txt", "r")
+    if file.mode == "r":
+        instagram_text = repr(file.read())
+        instagram_text = instagram_text.replace('\\n.\\n', ' <br> ')
+        instagram_text = instagram_text.replace('\\n', ' <br> ')
+        instagram_text = instagram_text.replace("'", '')
+        return render_template("index.html", instagram_text=instagram_text)
+    file.close()
     return render_template("index.html")
 
 @app.route('/telematica')
