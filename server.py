@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from flask import Flask
 from flask import render_template, request, redirect, url_for, g
 import py_compile
