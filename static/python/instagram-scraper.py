@@ -64,7 +64,7 @@ post_number = 0 # Last post made on Instagram.
 instagram = InstagramScraper()
 
 def get_instagram_post():
-    threading.Timer(300, get_instagram_post).start ()
+    threading.Timer(3600, get_instagram_post).start ()
     results = instagram.profile_page_recent_posts('https://www.instagram.com/' + username + '/?hl=en')
     #pprint(results[post_number]["is_video"])
     #Check if the post is a video or an image.
