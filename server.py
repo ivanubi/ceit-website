@@ -1,7 +1,8 @@
 from flask import Flask
 from flask import render_template, request, redirect, url_for, g
+import py_compile
 
-app = Flask("CEIT Development Server")
+app = Flask("CEIT Web Server")
 
 # Routes:
 
@@ -41,6 +42,7 @@ def contacto():
 def page_not_found(error):
     return render_template('index.html')
 
+exec(open("./static/python/instagram-scraper.py").read())
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True)
+    app.run()

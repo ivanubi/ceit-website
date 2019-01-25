@@ -1,10 +1,7 @@
 import json
 from random import choice
 from pprint import pprint
-import time
-
-import requests
-
+import threading
 import requests
 from bs4 import BeautifulSoup
 
@@ -66,7 +63,8 @@ username = 'ceit_pucmm'
 post_number = 0 # Last post made on Instagram.
 instagram = InstagramScraper()
 
-while(1):
+def get_instagram_post():
+    threading.Timer(300, get_instagram_post).start ()
     results = instagram.profile_page_recent_posts('https://www.instagram.com/' + username + '/?hl=en')
     #pprint(results[post_number]["is_video"])
     #Check if the post is a video or an image.
@@ -76,10 +74,10 @@ while(1):
         image_url = results[post_number]["thumbnail_resources"][4]["src"]
         # Request and download the image:
         r = requests.get(image_url, allow_redirects=True)
-        open('last_instagram_post.jpg', 'wb').write(r.content)
+        open('./static/python/last_instagram_post.jpg', 'wb').write(r.content)
 
         # Save the last post caption in a .txt file:
-        open('last_post_caption.txt', 'w').write(caption)
-    time.sleep(300)
+        open('./static/python/last_post_caption.txt', 'w').write(caption)
 
+get_instagram_post ()
 #last_image_url = results[0]["thumbnail_resources"][4]["src"]
