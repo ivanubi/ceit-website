@@ -43,6 +43,3 @@ def page_not_found(error):
     return render_template('index.html')
 
 exec(open("./static/python/instagram-scraper.py").read())
-
-if __name__ == '__main__':
-    app.run()
