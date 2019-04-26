@@ -1,2 +1,3 @@
-# Sitio Web del Comité de Estudiantes de Ingeniería Telemática
-Website del Comité de Estudiantes de Ingeniería Telemática
+# Comité de Estudiantes de Ingeniería Telemática Website
+![alt text](https://i.imgur.com/nyAOZIy.png)
+
