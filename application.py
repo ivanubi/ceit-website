@@ -3,8 +3,10 @@
 from flask import Flask
 from flask import render_template, request, redirect, url_for, g
 import py_compile
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Routes:
 
